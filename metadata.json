@@ -1,0 +1,6 @@
+{
+  "name": "Orbital Celestial EdTech | اوربیتال",
+  "description": "پلتفرم آموزشی و رصدخانه دیجیتال اوربیتال؛ تلاقی دانش نجوم باستانی با فناوری‌های نوین آموزشی و محاسبات مداری",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

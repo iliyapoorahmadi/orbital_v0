@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>درباره اوربیتال | میراث مراغه تا مرزهای کیهان</title>
+    <meta name="description" content="داستان پلتفرم اوربیتال، پیوند تمدن علمی کهن ایران و رصدخانه مراغه با فناوری‌های شبیه‌سازی فضایی و آموزش مدرن" />
+    <meta property="og:title" content="درباره اوربیتال | میراث مراغه تا مرزهای کیهان" />
+    <meta property="og:description" content="داستان پلتفرم اوربیتال، پیوند تمدن علمی کهن ایران و رصدخانه مراغه با فناوری‌های شبیه‌سازی فضایی و آموزش مدرن" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/astronomy-lab.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Pure Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <canvas id="stars-canvas"></canvas>
+    <div class="cosmic-ambient-glow"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="version-chip" title="About Orbital">
+          <span class="chip-beacon"></span>
+          <span>ORBIT // HERITAGE</span>
+        </div>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+            <li><a href="products.html" class="nav-link">محصولات و دوره‌ها</a></li>
+            <li><a href="about.html" class="nav-link active">درباره اوربیتال</a></li>
+            <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="index.html" class="brand-link">
+            <span>اوربیتال</span>
+            <div class="brand-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 3"/>
+                <circle cx="20" cy="20" r="12" stroke="#5ce1e6" stroke-width="1.75"/>
+                <circle cx="20" cy="20" r="6" stroke="#fef08a" stroke-width="1.5"/>
+                <circle cx="20" cy="8" r="2.5" fill="#38bdf8"/>
+                <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+              </svg>
+            </div>
+          </a>
+
+          <button class="mobile-toggle" aria-label="منو" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer">
+      <a href="index.html" class="mobile-nav-link">صفحه اصلی</a>
+      <a href="products.html" class="mobile-nav-link">محصولات و دوره‌ها</a>
+      <a href="about.html" class="mobile-nav-link active">درباره اوربیتال</a>
+      <a href="contact.html" class="mobile-nav-link">تماس با ما</a>
+    </div>
+
+    <main style="padding-top: 7.5rem; padding-bottom: 5rem;">
+      <div class="container">
+        <!-- Hero Introduction -->
+        <div class="about-hero-grid">
+          <div>
+            <span class="section-kicker">OUR GENESIS // ریشه‌های کیهانی ما</span>
+            <h1 class="section-title">از تپه‌های رصدخانه مراغه تا کاوش‌های ژرف فضا</h1>
+            <p style="color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">
+              اوربیتال پروژه‌ای است برخاسته از احترام عمیق به تمدن رصدی ایران زمین. قرن‌ها پیش، خواجه نصیرالدین طوسی در بلندای تپه‌های مراغه، بزرگ‌ترین مرکز پژوهش‌های علمی جهان را بنا نهاد و با گردآوری دانشمندان از اقصی نقاط جهان، ریاضیات حرکت سیارات را بازنویسی کرد.
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 2rem;">
+              امروز در عصر محاسبات کوانتومی و تلسکوپ‌های جیمز وب، ما مأموریت داریم این شاهکارهای مهندسی—از ابداع «جفت طوسی» تا محاسبات خیره‌کننده اسطرلاب‌های برنجی—را به تجارب بصری، زنده و ملموس تبدیل کنیم که هر دانشجو در هر نقطه از کره زمین بتواند مدارهای هستی را لمس کند.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="products.html" class="btn-orbital-cta">کاوش در شبیه‌سازها</a>
+              <a href="contact.html" class="btn-secondary">پیوستن به حلقه پژوهشگران</a>
+            </div>
+          </div>
+
+          <div class="about-visual-frame">
+            <img src="assets/images/astronomy-lab.jpg" alt="رصدخانه مجازی اوربیتال" loading="eager" />
+          </div>
+        </div>
+
+        <!-- Historical Celestial Timeline -->
+        <div class="section-space">
+          <div class="section-header">
+            <span class="section-kicker">CHRONOLOGY // گاه‌شمار رصدی</span>
+            <h2 class="section-title">مسیر هزارساله ستاره‌شناسی ایران تا اوربیتال</h2>
+            <p class="section-desc">ایستگاه‌های سرنوشت‌ساز در تاریخ فهم بشر از آسمان شب که بنیان علمی پلتفرم اوربیتال را شکل داده‌اند.</p>
+          </div>
+
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <!-- Milestone 1 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">۹۶۴ میلادی (۳۵۳ هـ.ق)</span>
+                <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">نگارش صور الکواکب توسط عبدالرحمن صوفی</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                  نخستین ثبت تاریخی کهکشان آندرومدا با نام «سحابی لطخاء» در شیراز؛ اصلاح فهرست درخشندگی ستارگان و تصویرسازی خیره‌کننده از صور فلکی.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 2 -->
+            <div class="timeline-item opposite">
+              <div class="timeline-node"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">۱۲۵۹ میلادی (۶۵۷ هـ.ق)</span>
+                <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">بنیان‌گذاری رصدخانه تاریخی مراغه</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                  تاسیس رصدخانه توسط خواجه نصیرالدین طوسی با حمایت هلاکوخان؛ ساخت ابزارهای رصدی عظیم با نظارت مؤیدالدین عُرضی و گردآوری ۴۰۰ هزار جلد کتاب.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 3 -->
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-content">
+                <span class="timeline-year">۱۲۷۴ میلادی (۶۷۲ هـ.ق)</span>
+                <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">ابداع «جفت طوسی» و زیج ایلخانی</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                  ارائه مدل هندسی انقلابی طوسی برای تبدیل حرکت دایره‌ای به خطی که بعدها به طور مستقیم در کتاب معروف کپرنیک درباره گردش افلاک به کار گرفته شد.
+                </p>
+              </div>
+            </div>
+
+            <!-- Milestone 4 -->
+            <div class="timeline-item opposite">
+              <div class="timeline-node" style="border-color: #f59e0b; box-shadow: 0 0 15px #f59e0b;"></div>
+              <div class="timeline-content" style="border-color: rgba(245, 158, 11, 0.35);">
+                <span class="timeline-year" style="color: var(--amber-lantern);">۲۰۲۶ میلادی (امروز)</span>
+                <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem; font-weight: 700;">تولد پلتفرم آموزشی اوربیتال</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+                  توسعه نسل جدید نرم‌افزارهای شبیه‌سازی اسطرلاب و حل محاسبات مداری در مرورگر برای نسل جوان پژوهشگران علم و فناوری فضا.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values & Principles Grid -->
+        <div class="section-space">
+          <div class="section-header">
+            <span class="section-kicker">FOUNDATIONAL VALUES // اصول بنیادین</span>
+            <h2 class="section-title">چرا اوربیتال متمایز است؟</h2>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3>دقت علمی اثبات‌پذیر</h3>
+              <p>تمامی الگوریتم‌های شبیه‌ساز ما منطبق بر حل معادلات دیفرانسیل کپلر و داده‌های اپفمریس سازمان ناسا و رصدخانه‌های بین‌المللی است.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m10 15 5-3-5-3v6z"></path>
+                </svg>
+              </div>
+              <h3>آموزش تعاملی بدون انتزاع</h3>
+              <p>به جای فرمول‌های خشک روی تخته، دانشجو متغیرهای مداری را دستکاری می‌کند و تغییر شکل مدار و سرعت فرار را زنده نظاره می‌کند.</p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <h3>زیبایی‌شناسی شیشه‌ای و کیهانی</h3>
+              <p>محیط بصری اوربیتال حس حضور در یک رصدخانه مدرن با شیشه‌های اپتیکال و سکوت عمیق شب‌های کویر ایران را القا می‌کند.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand-link">
+              <span>اوربیتال</span>
+              <div class="brand-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="18" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 3"/>
+                  <circle cx="20" cy="20" r="12" stroke="#5ce1e6" stroke-width="1.75"/>
+                  <circle cx="20" cy="20" r="6" stroke="#fef08a" stroke-width="1.5"/>
+                  <circle cx="20" cy="8" r="2.5" fill="#38bdf8"/>
+                  <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+                </svg>
+              </div>
+            </a>
+            <p class="footer-brand-desc">
+              بازآفرینی شکوه علمی مراغه در قالب فناوری‌های تعاملی آموزش ستاره‌شناسی.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">پیوندها</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">صفحه نخست</a></li>
+              <li><a href="products.html">شبیه‌سازها</a></li>
+              <li><a href="about.html">تاریخچه و دیدگاه</a></li>
+              <li><a href="contact.html">ارتباط با ما</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">منابع علمی</h4>
+            <ul class="footer-links">
+              <li><a href="products.html">زیج ایلخانی دیجیتال</a></li>
+              <li><a href="products.html">مدل جفت طوسی</a></li>
+              <li><a href="products.html">صور الکواکب</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">ارتباط</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">جهت همکاری دانشگاهی یا پیشنهاد پروژه‌های پژوهشی با ما مکاتبه فرمایید.</p>
+            <a href="contact.html" class="btn-orbital-cta" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">تماس مستقیم</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© ۲۰۲۶ اوربیتال. بازتولید با احترام به دانشمندان کهن ایران.</div>
+          <div style="font-family: var(--font-mono); direction: ltr;">READY FOR GITHUB PAGES</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

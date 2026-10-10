@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محصولات و دوره‌های آموزشی | اوربیتال</title>
+    <meta name="description" content="فهرست ابزارها، شبیه‌سازهای اسطرلاب و دوره‌های تخصصی مکانیک مداری و ستاره‌شناسی پلتفرم اوربیتال" />
+    <meta property="og:title" content="محصولات و دوره‌های آموزشی | اوربیتال" />
+    <meta property="og:description" content="فهرست ابزارها، شبیه‌سازهای اسطرلاب و دوره‌های تخصصی مکانیک مداری و ستاره‌شناسی پلتفرم اوربیتال" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/astrolabe-device.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Background Canvas -->
+    <canvas id="stars-canvas"></canvas>
+    <div class="cosmic-ambient-glow"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="version-chip" title="Orbital Catalog">
+          <span class="chip-beacon"></span>
+          <span>ORBIT // PRODUCTS</span>
+        </div>
+
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+            <li><a href="products.html" class="nav-link active">محصولات و دوره‌ها</a></li>
+            <li><a href="about.html" class="nav-link">درباره اوربیتال</a></li>
+            <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+          </ul>
+        </nav>
+
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="index.html" class="brand-link">
+            <span>اوربیتال</span>
+            <div class="brand-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="18" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 3"/>
+                <circle cx="20" cy="20" r="12" stroke="#5ce1e6" stroke-width="1.75"/>
+                <circle cx="20" cy="20" r="6" stroke="#fef08a" stroke-width="1.5"/>
+                <circle cx="20" cy="8" r="2.5" fill="#38bdf8"/>
+                <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+              </svg>
+            </div>
+          </a>
+
+          <button class="mobile-toggle" aria-label="منو" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer">
+      <a href="index.html" class="mobile-nav-link">صفحه اصلی</a>
+      <a href="products.html" class="mobile-nav-link active">محصولات و دوره‌ها</a>
+      <a href="about.html" class="mobile-nav-link">درباره اوربیتال</a>
+      <a href="contact.html" class="mobile-nav-link">تماس با ما</a>
+    </div>
+
+    <main style="padding-top: 7.5rem; padding-bottom: 5rem;">
+      <div class="container">
+        <!-- Page Title Header -->
+        <div class="section-header">
+          <span class="section-kicker">CURRICULUM & INSTRUMENTS // جعبه‌ابزار و دوره‌ها</span>
+          <h1 class="section-title">محصولات و شبیه‌سازهای اوربیتال</h1>
+          <p class="section-desc">مجموعه‌ای جامع از ابزارهای رصدی دیجیتال، شبیه‌سازهای سه‌بعدی اسطرلاب و دوره‌های تخصصی فیزیک کیهانی برای یادگیری عمیق.</p>
+        </div>
+
+        <!-- Interactive Astrolabe Sandbox Banner -->
+        <div style="background: var(--bg-card); border: 1px solid var(--border-glow); border-radius: var(--radius-xl); padding: 2.25rem; margin-bottom: 3.5rem; backdrop-filter: blur(20px); position: relative; overflow: hidden;">
+          <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center;">
+            <div>
+              <span class="section-kicker" style="color: var(--gold-parchment);">LIVE ASTROLABE ENGINE // ابزار زنده</span>
+              <h2 style="font-size: 1.75rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">آزمایشگاه سنجش زاویه میل و سمت خورشید</h2>
+              <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem; margin-bottom: 1.5rem;">
+                با جابجایی دستگیره زیر، خط‌کش مدرج (عضاده) اسطرلاب را بچرخانید و تغییر مختصات ستارگان قطبی و زمان محلی را در شبیه‌ساز مشاهده کنید.
+              </p>
+              
+              <div style="margin-bottom: 1rem;">
+                <label style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; font-family: var(--font-mono);">
+                  <span>زاویه ارتفاع (Alt): <strong id="astrolabe-angle-display" style="color: #38bdf8;">۴۵°</strong></span>
+                  <span>معادل زمان خورشیدی: <strong id="astrolabe-time-display" style="color: #fef08a;">۱۵:۳۰</strong></span>
+                </label>
+                <input type="range" id="astrolabe-slider" min="0" max="360" value="45" style="width: 100%; accent-color: #38bdf8; cursor: pointer;" />
+              </div>
+            </div>
+
+            <!-- Visual Rotator -->
+            <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+              <div style="width: 220px; height: 220px; border-radius: 50%; border: 2px dashed rgba(56, 189, 248, 0.4); display: flex; align-items: center; justify-content: center; position: relative; background: radial-gradient(circle, rgba(15, 25, 45, 0.9) 0%, rgba(8, 11, 16, 0.9) 100%);">
+                <div id="astrolabe-needle" style="width: 180px; height: 4px; background: linear-gradient(90deg, #38bdf8 0%, #f59e0b 50%, #5ce1e6 100%); border-radius: 2px; transform: rotate(45deg); box-shadow: 0 0 12px #38bdf8; transition: transform 0.05s linear;"></div>
+                <div style="position: absolute; width: 14px; height: 14px; border-radius: 50%; background: #ffffff; box-shadow: 0 0 10px #38bdf8;"></div>
+                <span style="position: absolute; top: 8px; font-size: 0.65rem; color: var(--text-dim); font-family: var(--font-mono);">سمت‌الرأس (ZENITH)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Categories -->
+        <div class="products-filter-bar">
+          <button class="filter-btn active" data-filter="all">همه محصولات و دوره‌ها</button>
+          <button class="filter-btn" data-filter="simulators">شبیه‌سازها و ابزارها</button>
+          <button class="filter-btn" data-filter="courses">دوره‌های آموزشی</button>
+          <button class="filter-btn" data-filter="atlases">اطلس و زیج کهن</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+          <!-- Item 1 -->
+          <div class="product-card" data-category="simulators">
+            <div class="product-thumb">
+              <img src="assets/images/astrolabe-device.jpg" alt="شبیه‌ساز اسطرلاب کوانتومی" loading="lazy" />
+              <div class="product-badge-cyan">شبیه‌ساز تعاملی</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>SIM // V3.2</span>
+                <span>·</span>
+                <span>پشتیبانی مرورگر و وب</span>
+              </div>
+              <h3 class="product-title">شبیه‌ساز تعاملی اسطرلاب کوانتومی</h3>
+              <p class="product-desc">
+                بازسازی رایانه‌ای کامل صفحات عرض‌های جغرافیایی، شبکه عنکبوتی ستاره‌ها (عنکبوت) و خط‌کش زاویه‌سنج با دقت کسری از ثانیه قوسی.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۴۵۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-1">دریافت دسترسی</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="product-card" data-category="courses">
+            <div class="product-thumb">
+              <img src="assets/images/celestial-scholar.jpg" alt="دوره جامع مکانیک سماوی" loading="lazy" />
+              <div class="product-badge-gold">دوره ویژه</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>COURSE // 12 WEEKS</span>
+                <span>·</span>
+                <span>همراه با گواهی‌نامه</span>
+              </div>
+              <h3 class="product-title">دوره جامع مکانیک سماوی و مدارهای سیاره‌ای</h3>
+              <p class="product-desc">
+                از قوانین کپلر و تقطیع بیضوی تا انتقال هوهمان و محاسبات مداری فضاپیماهای نوین با حل تمرین‌های برنامه‌نویسی.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۸۹۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-2">ثبت‌نام دوره</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="product-card" data-category="simulators">
+            <div class="product-thumb">
+              <img src="assets/images/astronomy-lab.jpg" alt="رصدخانه مجازی مراغه" loading="lazy" />
+              <div class="product-badge-cyan">آزمایشگاه سه‌بعدی</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>LAB // WEBDL</span>
+                <span>·</span>
+                <span>فضای سه‌بعدی تعاملی</span>
+              </div>
+              <h3 class="product-title">آزمایشگاه مجازی رصدخانه تاریخی مراغه</h3>
+              <p class="product-desc">
+                گشت‌وگذار مجازی در گنبد رصدی، ربع مجیب، سدس فخری و رصد بلادرنگ کواکب منظومه شمسی از روی مختصات جغرافیایی رصدخانه.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۶۸۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-3">ورود به آزمایشگاه</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="product-card" data-category="atlases">
+            <div class="product-thumb">
+              <img src="assets/images/celestial-scholar.jpg" alt="اطلس صور فلکی صوفی رازی" loading="lazy" />
+              <div class="product-badge-cyan">اطلس دیجیتال</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>ATLAS // ARCHIVE</span>
+                <span>·</span>
+                <span>کیفیت 4K برداری</span>
+              </div>
+              <h3 class="product-title">اطلس صور الکواکب عبدالرحمن صوفی رازی</h3>
+              <p class="product-desc">
+                نقشه‌های تاریخی ۴۸ صورت فلکی بطلمیوسی بازتصویرشده با خوشنویسی کهن، تطبیق یافته با کاتالوگ ستارگان ماهواره هیپارکوس.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۳۲۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-4">دریافت اطلس</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="product-card" data-category="courses">
+            <div class="product-thumb">
+              <img src="assets/images/astronomy-lab.jpg" alt="محاسبات نجومی با پایتون" loading="lazy" />
+              <div class="product-badge-gold">پیشرفته</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>WORKSHOP // ADVANCED</span>
+                <span>·</span>
+                <span>پروژه‌محور</span>
+              </div>
+              <h3 class="product-title">کارگاه تخصصی نجوم محاسباتی با پایتون و وب</h3>
+              <p class="product-desc">
+                پردازش داده‌های تلسکوپ جیمز وب و هابل، مدل‌سازی طیف نوری ابرنواخترها و شبیه‌سازی عددی مدار سیارک‌ها در وب.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۱,۱۵۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-5">رزرو صندلی</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="product-card" data-category="simulators">
+            <div class="product-thumb">
+              <img src="assets/images/astrolabe-device.jpg" alt="کیت ساخت اسطرلاب" loading="lazy" />
+              <div class="product-badge-cyan">فیزیکی و دیجیتال</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta-row">
+                <span>KIT // DIY EDTECH</span>
+                <span>·</span>
+                <span>ارسال پستی + نرم‌افزار</span>
+              </div>
+              <h3 class="product-title">کیت ساخت اسطرلاب مسطح ایرانی</h3>
+              <p class="product-desc">
+                بسته قطعات برش لیزری برنجی اسطرلاب به همراه فایل‌های طراحی CAD و دسترسی یک‌ساله به موتور محاسباتی اوربیتال.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">۵۹۰,۰۰۰ <span>تومان</span></div>
+                <button class="btn-orbital-cta" style="padding: 0.55rem 1.25rem; font-size: 0.9rem;" data-open-modal="modal-purchase-6">سفارش کیت</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Quick Purchase / Enrollment Modal -->
+    <div class="orbital-modal-overlay" id="modal-purchase-1">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // ENROLLMENT</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">درخواست دسترسی به شبیه‌ساز</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          اطلاعات خود را وارد کنید تا لایسنس آموزشی و دسترسی ابری به موتور شبیه‌سازی اسطرلاب کوانتومی فوراً برای شما صادر شود.
+        </p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('درخواست شما ثبت شد. لینک دسترسی تا چند لحظه دیگر ایمیل می‌شود.'); document.getElementById('modal-purchase-1').classList.remove('active');">
+          <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="نام و نام خانوادگی..." required class="form-input" />
+          </div>
+          <div style="margin-bottom: 1.5rem;">
+            <input type="email" placeholder="آدرس ایمیل جهت ارسال لایسنس..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">تایید و فعال‌سازی فوری</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modals 2 through 6 reuse the same modal logic seamlessly -->
+    <div class="orbital-modal-overlay" id="modal-purchase-2">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // COURSE ADMISSION</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">ثبت‌نام در دوره مکانیک سماوی</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          ظرفیت پذیرش این دوره محدود به ۴۰ پژوهشگر است. رزرو شما با ثبت مشخصات در صف بررسی قرار خواهد گرفت.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('ثبت‌نام اولیه با موفقیت انجام شد. کد پیگیری به ایمیل ارسال گردید.'); document.getElementById('modal-purchase-2').classList.remove('active');">
+          <div style="margin-bottom: 1rem;">
+            <input type="text" placeholder="نام و نام خانوادگی..." required class="form-input" />
+          </div>
+          <div style="margin-bottom: 1.5rem;">
+            <input type="email" placeholder="آدرس ایمیل..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">ثبت قطعی در کلاس</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Generic Catch-All Modal for other items -->
+    <div class="orbital-modal-overlay" id="modal-purchase-3">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // LAB PASS</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">ورود به آزمایشگاه رصدخانه مراغه</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          دریافت گذرنامه رصدخانه و ورود بلادرنگ به تلسکوپ‌ها و تالار ابزارهای رصدی.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('گذرنامه آزمایشگاه صادر شد. خوش آمدید!'); document.getElementById('modal-purchase-3').classList.remove('active');">
+          <div style="margin-bottom: 1.5rem;">
+            <input type="email" placeholder="ایمیل خود را وارد کنید..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">صدور گذرنامه دیجیتال</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="orbital-modal-overlay" id="modal-purchase-4">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // ATLAS ARCHIVE</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">دریافت اطلس صور الکواکب</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          نسخه باکیفیت 4K و کتابچه راهنمای تشریحی به ایمیل شما ارسال می‌گردد.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('لینک دانلود اطلس ارسال شد.'); document.getElementById('modal-purchase-4').classList.remove('active');">
+          <div style="margin-bottom: 1.5rem;">
+            <input type="email" placeholder="ایمیل شما..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">دریافت فایل اطلس</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="orbital-modal-overlay" id="modal-purchase-5">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // ADVANCED WORKSHOP</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">رزرو صندلی کارگاه پایتون نجومی</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          پیش‌نیاز: آشنایی مقدماتی با پایتون و ریاضیات دبیرستان.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('رزرو صندلی شما با موفقیت ثبت شد.'); document.getElementById('modal-purchase-5').classList.remove('active');">
+          <div style="margin-bottom: 1.5rem;">
+            <input type="email" placeholder="ایمیل..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">ثبت درخواست حضور</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="orbital-modal-overlay" id="modal-purchase-6">
+      <div class="orbital-modal">
+        <button class="modal-close-btn">✕</button>
+        <span class="section-kicker">ORBIT // PHYSICAL KIT</span>
+        <h3 style="font-size: 1.45rem; font-weight: 800; color: #fff; margin-bottom: 0.75rem;">سفارش کیت فیزیکی اسطرلاب</h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.9rem; margin-bottom: 1.5rem;">
+          بسته شامل صفحه برنجی، محورهای برنجی تراش‌خورده و دفترچه راهنمای فارسی است.
+        </p>
+        <form onsubmit="event.preventDefault(); showToast('سفارش کیت شما ثبت شد. با شما تماس گرفته خواهد شد.'); document.getElementById('modal-purchase-6').classList.remove('active');">
+          <div style="margin-bottom: 1.5rem;">
+            <input type="tel" placeholder="شماره تماس جهت هماهنگی ارسال..." required class="form-input" />
+          </div>
+          <button type="submit" class="btn-orbital-cta" style="width: 100%;">ثبت نهایی سفارش</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="brand-link">
+              <span>اوربیتال</span>
+              <div class="brand-icon">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="18" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="2 3"/>
+                  <circle cx="20" cy="20" r="12" stroke="#5ce1e6" stroke-width="1.75"/>
+                  <circle cx="20" cy="20" r="6" stroke="#fef08a" stroke-width="1.5"/>
+                  <circle cx="20" cy="8" r="2.5" fill="#38bdf8"/>
+                  <circle cx="20" cy="20" r="2" fill="#ffffff"/>
+                </svg>
+              </div>
+            </a>
+            <p class="footer-brand-desc">
+              دوره‌ها و ابزارهای اوربیتال با هدف استانداردسازی آموزش‌های نجوم کاربردی و تاریخ علم ایران زمین طراحی شده‌اند.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">صفحات</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">صفحه اصلی</a></li>
+              <li><a href="products.html">محصولات و دوره‌ها</a></li>
+              <li><a href="about.html">درباره اوربیتال</a></li>
+              <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">پشتیبانی</h4>
+            <ul class="footer-links">
+              <li><a href="contact.html">راهنمای ثبت‌نام</a></li>
+              <li><a href="contact.html">پرسش‌های متداول</a></li>
+              <li><a href="contact.html">پشتیبانی دوره‌ها</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">خبرنامه</h4>
+            <form class="newsletter-form" style="display: flex; gap: 0.5rem;">
+              <input type="email" placeholder="ایمیل..." required style="background: rgba(15, 22, 34, 0.8); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; color: #fff; font-size: 0.85rem; flex: 1; outline: none;" />
+              <button type="submit" class="btn-orbital-cta" style="padding: 0.5rem 1rem; font-size: 0.85rem;">عضویت</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>© ۲۰۲۶ پلتفرم اوربیتال. تمامی دوره‌ها دارای تاییدیه علمی هستند.</div>
+          <div style="font-family: var(--font-mono); direction: ltr;">READY FOR GITHUB PAGES</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive script for astrolabe slider in this page -->
+    <script>
+      const slider = document.getElementById('astrolabe-slider');
+      const needle = document.getElementById('astrolabe-needle');
+      const angleDisplay = document.getElementById('astrolabe-angle-display');
+      const timeDisplay = document.getElementById('astrolabe-time-display');
+
+      const toPersianNum = (n) => String(n).replace(/[0-9]/g, w => ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'][+w]);
+
+      if (slider && needle) {
+        slider.addEventListener('input', (e) => {
+          const val = e.target.value;
+          needle.style.transform = `rotate(${val}deg)`;
+          if (angleDisplay) angleDisplay.textContent = `${toPersianNum(val)}°`;
+          
+          // Estimate solar time: 360 deg = 24 hours -> 15 deg = 1 hour
+          const totalMinutes = Math.floor((val / 360) * 24 * 60);
+          const h = Math.floor(totalMinutes / 60);
+          const m = totalMinutes % 60;
+          const hStr = toPersianNum(String(h).padStart(2, '0'));
+          const mStr = toPersianNum(String(m).padStart(2, '0'));
+          if (timeDisplay) timeDisplay.textContent = `${hStr}:${mStr}`;
+        });
+      }
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
